@@ -2,7 +2,7 @@ name: action workflow
 on:
   schedule:
     - cron: "5 * * * *"
-  purll_request:
+  pull_request:
     types: [close, assigned, opened, reopened] #[push]
 
 jobs:
