@@ -4,6 +4,7 @@ on: [push]
 jobs:
   git-hub-actions:
     runs-on: ubuntu-latest
+    steps: 
       - name: simple javascript actions
         id: hello
         uses: actions/hello-world-javascript-action@v1
