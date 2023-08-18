@@ -16,24 +16,24 @@ jobs:
       #     who-to-greet: hello vishnutheja
       - name: get the output time
         run: echo "${{ steps.hello.outputs.time }}"
-  test-github-actions:
-    runs-on: ubuntu-latest
-    steps:
-      - name: list files
-        run: |
-          pwd
-          ls -a
-          echo $GITHUB_SHA
-          echo $GITHUB_REPOSITORY
-          echo $GITHUB_WORKSPACE
-          echo "${{ github.token }}""
+  # test-github-actions:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: list files
+  #       run: |
+  #         pwd
+  #         ls -a
+  #         echo $GITHUB_SHA
+  #         echo $GITHUB_REPOSITORY
+  #         echo $GITHUB_WORKSPACE
+  #         echo "${{ github.token }}""
 
-      - name: checkout
-        uses: actions/checkout@v1
-      - name: list files after checkout
-        run: | 
-          pwd
-          ls -a
+  #     - name: checkout
+  #       uses: actions/checkout@v1
+  #     - name: list files after checkout
+  #       run: | 
+  #         pwd
+  #         ls -a
       # - name: simple javascript applicaiton
       #   id: hello
       #   uses: actions/hell-world-javascript-action@v1
